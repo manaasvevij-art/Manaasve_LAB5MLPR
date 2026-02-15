@@ -1,0 +1,32 @@
+# Machine Learning and Pattern Recognition – Lab 5  
+Face Detection and Hue–Saturation Based Clustering
+
+## Aim
+The aim of this experiment is to perform face detection and clustering using computer vision and machine learning techniques. The task involves detecting faces from an image, extracting colour-based features, and grouping similar faces using K-Means clustering. A template image is then analysed and assigned to a cluster based on extracted features.
+
+## Methodology
+The following steps were carried out during the experiment:
+
+1. Face detection was performed using the Haar Cascade Classifier provided by OpenCV.
+2. The detected face regions were converted from BGR to HSV colour space to extract Hue and Saturation features.
+3. Feature vectors were constructed using the average hue and saturation values of each detected face.
+4. K-Means clustering was applied to group similar faces based on these features.
+5. A template image was processed in the same manner and its cluster label was predicted using the trained model.
+6. Visualisation techniques were used to display clusters, centroids, and the classification of the template image.
+
+## Key Findings
+- The Haar Cascade classifier successfully detected multiple faces within the faculty group image.
+- Hue and saturation values provided a meaningful feature representation for clustering visually similar faces.
+- K-Means clustering separated the faces into distinct groups based on colour characteristics.
+- The template image was classified into one of the existing clusters using the learned feature space.
+
+## Results
+
+### Face Detection Output
+![Face Detection](Screenshot 1.png)
+
+### Template Image Classification Output
+![Template Detection](Screenshot 2.png)
+
+## Conclusion
+This experiment demonstrates how distance-based learning methods can be applied to image analysis tasks. By combining face detection with feature extraction and clustering, it is possible to group visually similar data points without labelled training data. The results highlight the effectiveness of K-Means clustering when meaningful features such as hue and saturation are used.
